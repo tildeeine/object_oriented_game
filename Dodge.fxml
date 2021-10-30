@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dodge.fxui.DodgeAppController">
+   <children>
+      <GridPane layoutX="2.0" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="312.66664123535156" minHeight="10.0" prefHeight="299.99998474121094" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="191.33334350585938" minHeight="10.0" prefHeight="100.00001525878906" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutX="460.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#handleDown" text="Down" />
+                  <Button layoutX="514.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#handleRight" text="Right" />
+                  <Button layoutX="415.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#handleLeft" text="Left" />
+                  <Button layoutX="467.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#handleUp" text="Up" />
+                  <Button layoutX="25.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#handleLoad" text="Load Last Save" />
+                  <Button layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#handleSave" text="Save Game" />
+                  <Button layoutX="196.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#handleQuitGame" text="Quit" />
+                  <Button layoutX="253.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#handlePlayPauseGame" text="Pause/Play" />
+               </children>
+            </Pane>
+            <Pane fx:id="board" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
