@@ -32,7 +32,7 @@ The structure of the project here on GitHub might not be exactly as it was origi
 |               |-- TileTest.java
 |               |-- EnemyTest.java
 |               |-- DodgeFileSupportTest.java
-|           |-- testFile
+|           |-- resources
 |               |-- correctGameStateTest.dodge.txt
 |   |-- fxml
 |       |-- Dodge.fxml
