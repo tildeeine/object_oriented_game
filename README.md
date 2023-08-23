@@ -26,14 +26,13 @@ The structure of the project here on GitHub might not be exactly as it was origi
 |   |   |       |-- DodgeFileSupport.java
 |   |   |       |-- DodgeFileReading.java
 |   |-- test
-|       |-- java
-|           |-- dodge
-|               |-- GameTest.java
-|               |-- TileTest.java
-|               |-- EnemyTest.java
-|               |-- DodgeFileSupportTest.java
-|           |-- resources
-|               |-- correctGameStateTest.dodge.txt
+|       |-- dodge
+|            |-- GameTest.java
+|            |-- TileTest.java
+|            |-- EnemyTest.java
+|            |-- DodgeFileSupportTest.java
+|       |-- resources
+|            |-- correctGameStateTest.dodge.txt
 |   |-- fxml
 |       |-- Dodge.fxml
 |-- README.md
@@ -45,6 +44,20 @@ The structure of the project here on GitHub might not be exactly as it was origi
 ```
 
 ## Explanation of Project Structure
+- **'src/main/java/dodge'**: Contains the main Java classes responsible for the game's functionality.
+    - **'Game.java'**: Entry point of the game Application.
+    - **'Tile.java'**: Controls the logic for the game pieces, tiles. Both players and enemies are tile objects.
+    - **'Enemy.java'**: Represents the blocks that the player needs to dodge.
+- **'src/test/dodge'**: Houses JUnit5 tests for unit testing the game's components.
+    - **'DodgeFileSupportTest'**: Test for file support classes.
+    - **'EnemyTest'**: Tests enemy tile behaviour.
+    - **'GameTest'**: Tests general game and player behaviour.
+    - **'TileTest'**: Tests tile behaviour.
+- **'src/test/resources/correctGameStateTest.dodge.txt'**: The correct game state file that is tested in file support tests. 
+- **'src/main/fxml'**: Contains the files directly connected to fxml for the project.
+    - **'Dodge.fxml'**: Contains the fxml setup and objects.
+    - **'DodgeApp.java'**: Application which sets up the fxml file when ran.
+    - **'DodgeAppController.java'**: Contains handles for the fxml objects to connect to calls.
 
 ## Topics covered / Things learned
 - **Object-Oriented Programming**: Gained insight into designing and implementing a game using object-oriented principles
